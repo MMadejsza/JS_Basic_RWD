@@ -1,2 +1,11 @@
 .header {
+	background-color: $color-primary; // color for entire screen width - not .container content
+	color: whitesmoke;
+	padding: $main-spacing 0;
+	margin-bottom: $main-spacing;
+
+	.header--content {
+		display: flex;
+		align-items: center;
+	}
 }

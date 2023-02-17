@@ -452,4 +452,19 @@ p {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
+}
+
+.header {
+  background-color: #53a89a;
+  color: whitesmoke;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+.header .header--content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }/*# sourceMappingURL=style.css.map */
