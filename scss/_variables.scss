@@ -1,0 +1,13 @@
+$base-font-size: 16px; // default size on bigger screens
+$small-font-size: 14px; // on smaller screens
+
+$font-family: 'Montserrat', 'sans-serif';
+
+$main-spacing: 20px; // all the margins / padding
+$max-width: 1000px; // max content width
+$breakpoints: (
+	// map for RWD
+	xs: 500px,
+	sm: 800px,
+	xl: 100px
+);
