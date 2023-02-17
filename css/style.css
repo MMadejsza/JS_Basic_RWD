@@ -458,6 +458,14 @@ img {
   max-width: 100%;
 }
 
+.app--images {
+  margin: 20px 0;
+}
+
+.app--description {
+  margin-bottom: 20px;
+}
+
 .header {
   background-color: #53a89a;
   color: whitesmoke;
@@ -490,6 +498,7 @@ table tr {
 }
 table th,
 table td {
+  text-align: left;
   padding: 5px;
 }
 

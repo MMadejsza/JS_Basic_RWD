@@ -10,6 +10,7 @@ table {
 	}
 	th,
 	td {
+		text-align: left;
 		padding: calc($main-spacing / 4);
 	}
 }
