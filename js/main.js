@@ -56,9 +56,21 @@ class TableRWD {
 		this.tableValuesContainer.appendChild(table);
 	};
 
+	drawValues = (isDesktop) => {
+		if (isDesktop) {
+			this.drawTableValuesDesktop();
+		} else {
+			this.drawListValuesMobile();
+		}
+	};
+
 	init = () => {
-		// this.drawTableValuesDesktop();
-		this.drawListValuesMobile();
+		//takes boolean at start from this.desktopViewport
+		this.drawValues(this.desktopViewport.matches);
+		//next listens if screen resolutions has been changed:
+		this.desktopViewport.addListener((isDesktopUpdated) => {
+			this.drawValues(isDesktopUpdated.matches);
+		});
 	};
 }
 
