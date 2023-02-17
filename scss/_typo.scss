@@ -1,0 +1,26 @@
+// everything related with typography due to hard browser reset
+html {
+	//mobile first
+	font-size: $small-font-size;
+	font-family: $font-family;
+	@media (min-width: map-get($breakpoints, xs)) {
+		//500px
+		font-size: $base-font-size;
+	}
+}
+
+strong {
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 1.5rem;
+}
+
+h2 {
+	font-size: 1.2rem;
+	margin-bottom: $main-spacing/2; //10px
+}
+p {
+	margin-bottom: $main-spacing/2;
+}
