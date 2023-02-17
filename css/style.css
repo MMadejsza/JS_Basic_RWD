@@ -475,4 +475,20 @@ img {
 .header .header--logo {
   margin-right: 10px;
   width: 40px;
+}
+
+table {
+  width: 100%;
+}
+table thead {
+  border-bottom: 2px solid #3a756b;
+  color: whitesmoke;
+  background-color: #53a89a;
+}
+table tr {
+  border-bottom: 1px solid #ddd;
+}
+table th,
+table td {
+  padding: 5px;
 }/*# sourceMappingURL=style.css.map */

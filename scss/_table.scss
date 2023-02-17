@@ -1,0 +1,15 @@
+table {
+	width: 100%;
+	thead {
+		border-bottom: 2px solid darken($color-primary, 15%);
+		color: whitesmoke;
+		background-color: $color-primary;
+	}
+	tr {
+		border-bottom: 1px solid #ddd;
+	}
+	th,
+	td {
+		padding: calc($main-spacing / 4);
+	}
+}
