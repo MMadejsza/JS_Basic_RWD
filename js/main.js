@@ -15,14 +15,23 @@ class TableRWD {
 		this.tableValuesContainer.innerHTML = '';
 		let table = document.createElement('table');
 		let thead = document.createElement('thead');
-		thead.innerHTML = `
-        <th>Name</th>
+		thead.innerHTML = `<tr><th>Name</th>
         <th>Calories</th>
         <th>Fat</th>
-        <th>Carbs</th>
-        `;
-		table.appendChild(thead);
+        <th>Carbs</th></tr>`;
 
+		let tbody = document.createElement('tbody');
+		this.values.forEach((value) => {
+			let row = document.createElement('tr');
+			row.innerHTML = `<td>${value.name}</td>
+            <td>${value.calories}</td>
+            <td>${value.fat}</td>
+            <td>${value.carbs}</td>`;
+			tbody.appendChild(row);
+		});
+
+		table.appendChild(thead);
+		table.appendChild(tbody);
 		this.tableValuesContainer.appendChild(table);
 	};
 
