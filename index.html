@@ -36,6 +36,21 @@
 							<a href="mailto:example@email.com">maciej.madejsza@gmail.com</a>
 						</div>
 					</div>
+					<h2>Nutritional Value Chart:</h2>
+					<div class="app--values"></div>
+
+					<div class="app--images">
+						<picture>
+							<!-- Order is important. First true condition is checked - the rest ignored -->
+							<source
+								srcset="./assets/nutrition-1000.jpg"
+								media="(min-width: 800px)" />
+							<source
+								srcset="./assets/nutrition-800.jpg"
+								media="(min-width: 500px)" />
+							<img src="./assets/nutrition-500.jpg" alt="Nutrition" />
+						</picture>
+					</div>
 				</div>
 			</div>
 		</main>
