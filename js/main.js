@@ -11,7 +11,28 @@ class TableRWD {
 		this.init();
 	}
 
-	drawTableValues = () => {
+	drawListValuesMobile = () => {
+		const drawLiForListMobile = (li, displayedAttributeName, value) => {
+			let eachAttribute = document.createElement('div');
+			eachAttribute.innerHTML = `<strong>${displayedAttributeName}: </strong>${value}`;
+			li.appendChild(eachAttribute);
+		};
+		this.tableValuesContainer.innerHTML = '';
+		let list = document.createElement('ul');
+
+		this.values.forEach((value) => {
+			let li = document.createElement('li');
+			drawLiForListMobile(li, 'Name: ', value.name);
+			drawLiForListMobile(li, 'Calories: ', value.calories);
+			drawLiForListMobile(li, 'Fat: ', value.fat);
+			drawLiForListMobile(li, 'Carbs: ', value.carbs);
+			list.appendChild(li);
+		});
+
+		this.tableValuesContainer.appendChild(list);
+	};
+
+	drawTableValuesDesktop = () => {
 		this.tableValuesContainer.innerHTML = '';
 		let table = document.createElement('table');
 		let thead = document.createElement('thead');
@@ -36,7 +57,8 @@ class TableRWD {
 	};
 
 	init = () => {
-		this.drawTableValues();
+		// this.drawTableValuesDesktop();
+		this.drawListValuesMobile();
 	};
 }
 
