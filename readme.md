@@ -6,7 +6,7 @@ Practicing RWD. Depending on the user's screen resolution different picture is d
 
 ## Uses inter alia concepts of:
 
-### JS
+### JS:
 
 matchMedia method, Object Approach
 
@@ -14,11 +14,11 @@ matchMedia method, Object Approach
 
 SCSS syntax, Media Queries, Variables Map, Imports
 
-### CSS
+### CSS:
 
 Flexbox, BEM methodology, FontAwesome CDN
 
-### HTML
+### HTML:
 
 <picture> for RWD
 
