@@ -2,7 +2,7 @@
 
 Practicing RWD. Depending on the user's screen resolution different picture is displayed, and data as a list is resized and finally changed into the table. A vector graphic is used as a logo to prevent losing quality. "matchMedia" causes listening and applying changes only when exceeding the breakpoint instead of each pixel like a 'resize' event.
 
-## Website:
+## Website: https://mmadejsza.github.io/JS_Basic_RWD/
 
 ## Uses inter alia concepts of:
 
